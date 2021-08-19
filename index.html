@@ -204,11 +204,11 @@
 
               <form class="contact__form form" action="https://jsonplaceholder.typicode.com/posts/" method="POST">
                 <div class="form__inputs">
-                  <input class="form__input form__input-mr form__input-percent" type="text" placeholder="First Name" name="firstname">
-                  <input class="form__input form__input-percent" type="text" placeholder="Last Name" name="lastname">
+                  <input class="form__input form__input-mr form__input-percent" type="text" placeholder="First Name" name="firstname" required>
+                  <input class="form__input form__input-percent" type="text" placeholder="Last Name" name="lastname" required>
                 </div>
-                <input class="form__input phone" type="tel" placeholder="Phone Number" name="phone">
-                <textarea class="form__input" placeholder="Your Question" name="message"></textarea>
+                <input class="form__input phone" type="tel" placeholder="Phone Number" name="phone" required>
+                <textarea class="form__input" placeholder="Your Question" name="message" required></textarea>
                 <button type="submit" class="btn btn-red form__btn">Submit Now</button>
                 <div class="status"></div>
               </form>
