@@ -112,7 +112,7 @@ html {
           flex-direction: column;
 }
 
-._container {
+.container {
   max-width: 1110px;
   margin: 0 auto;
 }
@@ -600,6 +600,10 @@ textarea.input {
           transform: translateY(5px);
 }
 
+.software__right {
+  margin-right: 95px;
+}
+
 .features {
   padding: 62px 0 229px;
   background-color: #FAFAFA;
@@ -623,17 +627,6 @@ textarea.input {
 .box-item {
   position: relative;
   cursor: pointer;
-}
-
-.box-item:hover .box-item__bg {
-  -webkit-transform: scale(1.1);
-      -ms-transform: scale(1.1);
-          transform: scale(1.1);
-}
-
-.box-item:hover .box-item__card {
-  -webkit-box-shadow: 0 5px 30px rgba(0, 0, 0, 0.4);
-          box-shadow: 0 5px 30px rgba(0, 0, 0, 0.4);
 }
 
 .box-item__subtitle {
@@ -776,6 +769,10 @@ textarea.input {
 .focused {
   padding: 94px 0;
   background-color: #ED4C5C;
+}
+
+.focused__right {
+  margin-right: 95px;
 }
 
 .focused__title {
@@ -926,7 +923,7 @@ textarea.input {
   color: rgba(19, 39, 67, 0.5);
 }
 
-.form textarea.form__input {
+.form .textarea.form__input {
   padding: 20px 31px 10px;
   line-height: 100%;
   max-width: 100%;
@@ -1182,18 +1179,18 @@ textarea.input {
   margin-top: 22px;
 }
 
-.footer__links li {
+.footer__social {
   margin-right: 13px;
   -webkit-transition: 0.3s all linear;
   -o-transition: 0.3s all linear;
   transition: 0.3s all linear;
 }
 
-.footer__links li:last-child {
+.footer__social:last-child {
   margin-right: 0;
 }
 
-.footer__links li:hover {
+.footer__social:hover {
   -webkit-filter: invert(45%) sepia(13%) saturate(5904%) hue-rotate(320deg) brightness(93%) contrast(100%);
           filter: invert(45%) sepia(13%) saturate(5904%) hue-rotate(320deg) brightness(93%) contrast(100%);
   -webkit-transform: translateY(-3px);
@@ -1609,8 +1606,12 @@ body.ie ._ibg img {
 }
 
 @media (max-width: 1122px) {
-  ._container {
+  .container {
     max-width: 970px;
+  }
+
+  .software__right {
+    margin-right: 0;
   }
 
   .box {
@@ -1620,10 +1621,14 @@ body.ie ._ibg img {
         justify-content: space-around;
     gap: 130px 30px;
   }
+
+  .focused__right {
+    margin-right: 0;
+  }
 }
 
 @media (max-width: 991.98px) {
-  ._container {
+  .container {
     max-width: 750px;
   }
 
@@ -1733,7 +1738,7 @@ body.ie ._ibg img {
 }
 
 @media (max-width: 767.98px) {
-  ._container {
+  .container {
     max-width: none;
     padding: 0 10px;
   }
@@ -1974,6 +1979,11 @@ body.ie ._ibg img {
   }
 
   .form__input {
+    padding: 10px 20px;
+    font-size: 12px;
+  }
+
+  .form .textarea.form__input {
     padding: 10px 20px;
     font-size: 12px;
   }
